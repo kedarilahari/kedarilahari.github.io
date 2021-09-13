@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>  
 <html>  
     <header>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./Example CSS Style Templates/style3.css">
         <link rel="stylesheet" href="table_style.css">
-        <title>My Webpage Title</title>
+        <title>Kedari Narra</title>
     </header>
     <body>  
         <!---Navigation--->
@@ -11,26 +11,24 @@
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <!--This code defines the "My Webpage" link in the top right corner of the navigation pane-->
-                <a class="navbar-brand" href="">My Webpage</a>
+                <a class="navbar-brand" href="index.html">My Webpage</a>
                 <!--This code defines the "List" link in the top left corner of the navigation pane-->
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html">List</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="list.html">List</a></li>
                 </ul>
             </div>
         </nav>
         <!--This code creates the middle section of the webpage-->
-        <header class="masthead bg-primary text-white text-center">
-            <h1>Publications</h1>
+        <header class="masthead bg-body text-white text-center">
+            <h1>Favourite Cafes in Hyderabad</h1>
         </header>
         <!--Here is where the table will be loaded in.  The actual table will be loaded in JavaScript.-->
-        <center>
+        <section class="section-center">
             <br /><br />
             <div id="showDataJSON"></div>
-        </center>
+        </section>
     </body>
-
     <script>
-
         /*
         * RENDERING THE JSON TABLE
         * Get JSON data from file
@@ -42,7 +40,6 @@
         fetch('./list_data.json')
             .then(response => response.json())
             .then(data => {
-
                 /*
                 This section creates the base table and finds the root json node.
                 */
@@ -53,7 +50,6 @@
                 for (let prop in data) {
                     root = prop;
                 }
-
                 /*
                 This section selects the headers for the table
                 */
