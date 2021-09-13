@@ -23,7 +23,7 @@
             <h1>Favourite Cafes in Hyderabad</h1>
         </header>
         <!--Here is where the table will be loaded in.  The actual table will be loaded in JavaScript.-->
-        <section class="section-center">
+        <section>
             <br /><br />
             <div id="showDataJSON"></div>
         </section>
@@ -46,6 +46,7 @@
                 var jsonTable = document.createElement("table");
                 var tr = jsonTable.insertRow(-1);   
                 jsonTable.style.width = "75%";
+                jsonTable.style.margin = "0 auto";
                 let root;
                 for (let prop in data) {
                     root = prop;
