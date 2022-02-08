@@ -87,6 +87,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
 }
 
 hr {
@@ -11305,6 +11308,9 @@ html {
     line-height: 2.5rem;
   }
 }
+.page-section.portfolio{
+  margin: 0 150px;
+}
 
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
@@ -11360,22 +11366,23 @@ html {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #fff;
+  color: #46747C;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: #46747C;
+  border-bottom: 2px solid #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  border-bottom: 2px solid #46747C;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  border-bottom: 2px solid #46747C;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11389,19 +11396,17 @@ html {
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1.5em;
     transition: font-size 0.3s;
   }
   #mainNav .navbar-nav {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #1abc9c;
+    border-bottom: 2px solid #46747C;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #1abc9c;
+    border-bottom: 2px solid #46747C;
   }
 
   #mainNav.navbar-shrink {
@@ -11410,6 +11415,9 @@ html {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+  }
+  #mainNav.navbar-shadow {
+    box-shadow: -1px 0px 10px #888;
   }
 }
 .form-floating input.form-control,
@@ -11431,12 +11439,12 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
+  padding-top: calc(6rem + 94px);
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
@@ -11447,15 +11455,15 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    padding-top: calc(6rem + 94px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 .portfolio .portfolio-item {
