@@ -4059,6 +4059,10 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+  background-image: url("./assets/img/kln_logo.png");
+  background-size: cover;
+  height: 80px;
+  width: 80px;
 }
 .navbar-nav {
   display: flex;
@@ -11298,6 +11302,9 @@ html {
 .page-section {
   padding: 6rem 0;
 }
+.page-section.syfty-page{
+  padding-top: 3rem;
+}
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -11374,6 +11381,7 @@ html {
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #46747C;
   border-bottom: 2px solid #fff;
+  font-weight: 500;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   border-bottom: 2px solid #46747C;
@@ -11391,8 +11399,8 @@ html {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -11442,9 +11450,13 @@ html {
   padding-top: calc(6rem + 94px);
   padding-bottom: 6rem;
 }
+.masthead.sayfty-page{
+  padding-bottom: 0;
+}
 .masthead .masthead-heading {
   font-size: 1.25rem;
   line-height: 1.25rem;
+  color: rgba(70, 63, 58);
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
@@ -11458,12 +11470,16 @@ html {
     padding-top: calc(6rem + 94px);
     padding-bottom: 6rem;
   }
+  .masthead.sayfty-page{
+    padding-bottom: 0;
+  }
   .masthead .masthead-heading {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   .masthead .masthead-subheading {
     font-size: 1.25rem;
+    color: #46747C;
   }
 }
 .portfolio .portfolio-item {
@@ -11514,4 +11530,27 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+.img-portfolio{
+  height: 300px;
+  border-radius: 12px;
+}
+.img-dmv{
+  background-image: url('./assets/img/dmv.jpg');
+  background-size: cover;
+}
+
+.img-sayfty{
+  background-image: url('./assets/img/sayfty.png');
+  background-size: contain;
+}
+
+.img-reminisce{
+  background-image: url('./assets/img/reminisce.jpg');
+  background-size: cover;
+}
+
+.sayfty-banner{
+  width: 100%;
+  height: auto;
 }
