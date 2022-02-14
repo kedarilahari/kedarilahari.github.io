@@ -11314,10 +11314,11 @@ html {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+  .page-section.portfolio{
+    margin: 0 150px;
+  }
 }
-.page-section.portfolio{
-  margin: 0 150px;
-}
+
 
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
@@ -11553,4 +11554,24 @@ html {
 .sayfty-banner{
   width: 100%;
   height: auto;
+}
+
+.info-title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info-subtitle{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.info-container{
+  padding: 30px;
+  max-height: 300px;
+  border-radius: 10px;
+  border: 1px solid #e6eced;
+  justify-content: space-evenly;
+  min-height: 180px;
 }
