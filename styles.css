@@ -11575,3 +11575,27 @@ html {
   justify-content: space-evenly;
   min-height: 180px;
 }
+
+.main-section-title {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.main-section-text {
+  font-size: 18px;
+}
+
+.main-section-subtitle{
+  font-size: 23px;
+}
+
+.info-card{
+  background-color: #e6eced;
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 10px;
+}
+
+.m-l-10{
+  margin-left: 10px;
+}
